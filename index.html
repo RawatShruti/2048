@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="/2048.png" rel="icon">
+</head>
+<body>
+    <div id="control">
+        <center><h2>Control</h2>
+        <button onclick="left()">left</button>
+        <button onclick="up()">up</button>
+        <button onclick="down()">down</button>
+        <button onclick="right()">right</button></center>
+        <center><br><p>You can also use Arrow keys!</p></center>
+    </div>
+    
+    <div id="container">
+        <div id="splash" class="screen">
+            <h1><span class="char1">2</span><span class="char2">0</span><span class="char1">4</span><span class="char2">8</span></h1>
+            <button id="start" onclick="start()">New Game</button>
+        </div>
+        <div id="pause" class="screen">
+            <h1>Paused</h1>
+            <button onclick="reset()">Reset</button>
+            <button onclick="resume()">Continue</button>
+        </div>
+        <div id="end" class="screen">end</div>
+        <div id="game" class="screen">
+            <h1>2048</h1>
+            <div id="info">Score:
+                <span id="score"></span>
+                <button type="button" id="pausebtn" onclick="pause()">PAUSE</button>
+            </div>
+            <div id="gamearea">
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
